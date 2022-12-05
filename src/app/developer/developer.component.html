@@ -1,0 +1,12 @@
+<h1>Fiche du developper</h1>
+<section class="card">
+    <h2>lastname :{{developer.lastName}}</h2>
+    <h2>firstname : {{developer.firstName}}</h2>
+    <h2>Age : {{developer.age}}</h2>
+    <h2>Genre : {{developer.gender}}</h2>
+    <h2>Biographie : {{developer.bio}}</h2>
+
+    <section class="showSkills">
+        <app-skill *ngFor="let skill of developer.skills" [skill] ="skill"></app-skill>
+    </section>
+</section>

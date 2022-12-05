@@ -1,0 +1,12 @@
+.showSkills {
+  display: flex;
+  justify-content: start;
+}
+
+h1 {
+  margin: 2rem;
+}
+
+.card {
+  margin: 1rem;
+}

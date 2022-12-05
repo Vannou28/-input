@@ -1,0 +1,35 @@
+button {
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+
+input:focus {
+  background: #eaeaea;
+}
+
+input {
+  width: 249px;
+}
+
+.error {
+  color: red;
+}
+
+section {
+  border-top: solid 2px black;
+  margin-top: 4rem;
+}
+form {
+  margin: 3rem;
+}

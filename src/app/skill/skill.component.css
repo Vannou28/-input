@@ -1,0 +1,16 @@
+.card {
+  width: 20vw;
+  border: solid 2px rgb(211, 209, 209);
+  border-radius: 4px;
+  margin: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  margin: auto;
+  max-width: 90%;
+  max-height: 50px;
+}
