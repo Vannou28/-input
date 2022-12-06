@@ -33,3 +33,7 @@ section {
 form {
   margin: 3rem;
 }
+
+h1 {
+    border : solid 1.5px black;
+}

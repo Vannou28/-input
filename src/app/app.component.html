@@ -1,23 +1,66 @@
-<app-developer
-     [developer]="developerDetails">
-</app-developer>
+<h1>08 - Communication entre les composants : @Output</h1>
+
+<app-create-onomatopia (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"></app-create-onomatopia>
+<br>
+<h2>Affichage de la liste d'onomatopées</h2>
+
+<ul>
+  <li *ngFor="let onomatope of onomatopoeiaList">{{ onomatope }}</li>
+</ul>
+
+
+
+<br /><br /><br />
+<h1>07 - Communication entre les composants : @Input</h1>
+
+<app-developer [developer]="developerDetails"> </app-developer>
 
 <section>
-    <h2>Transmision d'un champ de saisi vers le component "developer"</h2>
-    <form (ngSubmit)="saveDeveloper()">
-        <label for="lastName">Nom :</label>
-        <input id="lastName" type="text" name="lastName" [(ngModel)]="lastNameSave" placeholder="Nom">
-        <label for="firstName">Prénom :</label>
-        <input id="firstName" type="text" name="firstName" [(ngModel)]="firstNameSave" placeholder="Prénom">
-        <label for="age">Age :</label>
-        <input id="age" type="text" name="age" [(ngModel)]="ageSave" placeholder="Age">
-        <label for="gender">Genre :</label>
-        <input id="gender" type="text" name="gender" [(ngModel)]="genderSave" placeholder="Masculin">
-        <label for="bio">Bio :</label>
-        <input id="bio" type="text" name="bio" [(ngModel)]="bioSave"  placeholder="Biogarphie">
-        
-        <div>
-            <button type="submit">Enregistrer</button>
-        </div>
-    </form>
+  <h2>Transmision d'un champ de saisi vers le component "developer"</h2>
+  <form (ngSubmit)="saveDeveloper()">
+    <label for="lastName">Nom :</label>
+    <input
+      id="lastName"
+      type="text"
+      name="lastName"
+      [(ngModel)]="lastNameSave"
+      placeholder="Nom"
+    />
+    <label for="firstName">Prénom :</label>
+    <input
+      id="firstName"
+      type="text"
+      name="firstName"
+      [(ngModel)]="firstNameSave"
+      placeholder="Prénom"
+    />
+    <label for="age">Age :</label>
+    <input
+      id="age"
+      type="text"
+      name="age"
+      [(ngModel)]="ageSave"
+      placeholder="Age"
+    />
+    <label for="gender">Genre :</label>
+    <input
+      id="gender"
+      type="text"
+      name="gender"
+      [(ngModel)]="genderSave"
+      placeholder="Masculin"
+    />
+    <label for="bio">Bio :</label>
+    <input
+      id="bio"
+      type="text"
+      name="bio"
+      [(ngModel)]="bioSave"
+      placeholder="Biogarphie"
+    />
+
+    <div>
+      <button type="submit">Enregistrer</button>
+    </div>
+  </form>
 </section>

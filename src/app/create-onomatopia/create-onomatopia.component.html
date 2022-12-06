@@ -1,0 +1,14 @@
+
+<h2>Saisie d'une onomatopé</h2>
+<section>
+  <form (ngSubmit)="createOnomatopia()">
+    <label for="onomatopeName">Nom :</label>
+    <input id="onomatopeName" type="text"
+      name="onomatopeName"
+      [(ngModel)]="onomatopeNameSave"
+      placeholder="onomatope"
+    />
+    <button type="submit">Enregistrer</button>
+
+  </form>
+</section>
